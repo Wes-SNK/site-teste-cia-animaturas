@@ -13,8 +13,8 @@ body {
 }
 
 header {
-    background-color: #333;
-    padding: 10px 20px;
+    background-color: #000000;
+    padding: 5px 20px;
 }
 
 nav {
@@ -23,8 +23,22 @@ nav {
     align-items: center;
 }
 
+.logo {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+#titulo {
+    font-size: 1.5em;
+    color: #e9d9d9;
+    margin-bottom: 0;
+}
+
 .logo img {
-    width: 150px;
+    padding-top: 5px;
+    width: 60px;
+    vertical-align: middle;
 }
 
 .nav-links {
