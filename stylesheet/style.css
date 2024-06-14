@@ -318,6 +318,44 @@ hr {
         font-size: 0.8em;
     }
 
+    .logo-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .site-title {
+        font-size: 1.1em;
+        text-align: center;
+    }
+
+    .nav-links {
+        /* display: flex; */
+        flex-direction: column;
+        align-items: center;
+        font-size: 0.8em;
+        text-align: center;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    #conteudo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #quem-somos {
+        width: 100%;
+        margin: 0;
+        padding: 5px;
+    }
+
+    #imagensSobrepostas {
+        width: 100%;
+        padding: 0;
+    }
+
     .footer-container {
         flex-direction: column;
         align-items: center;
