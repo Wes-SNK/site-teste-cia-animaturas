@@ -48,9 +48,9 @@ let prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
 setFavicon(prefersDarkMode ? 'dark' : 'light');
 
 // Adiciona um listener para mudanças na preferência de cores
-window.matchMedia('(prefers-color-scheme: dark)').addListener(event => {
+window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
     const newPrefersDarkMode = event.matches;
     setFavicon(newPrefersDarkMode ? 'dark' : 'light');
     prefersDarkMode = newPrefersDarkMode;
 });
-// Fim função de alterar favicon light mode e dark mode do navegador
+
