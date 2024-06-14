@@ -252,7 +252,7 @@ hr {
 /* Media Queries */
 @media (max-width: 768px) {
     #boneco_superior img {
-        width: 200px;
+        width: 150px;
     }
 
     .logo-container {
@@ -263,6 +263,7 @@ hr {
     .site-title {
         font-size: 1.2em;
         text-align: center;
+        margin: 10px 0;
     }
 
     .nav-links {
