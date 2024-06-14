@@ -31,6 +31,25 @@ nav {
     margin-right: 10px;
 }
 
+@keyframes animated {
+    to {background-position: 161px;}
+}
+
+.logo a {
+    text-decoration: none;
+}
+
+.logo a:hover{
+    transition: 0.3s ease-in-out;
+    transition: color 0.4s ease-in-out;
+    background: linear-gradient(to right, rgb(30, 30, 220),rgb(20, 20, 250), blue, rgb(20, 200, 250));   
+    background-clip: text;
+    display: inline;
+    color: transparent;
+    animation: animated 5s linear infinite;
+    transition: ease-in-out;
+}
+
 #titulo {
     font-family: 'looney-tunes';
     font-size: 2.1em;
@@ -64,7 +83,14 @@ nav {
 }
 
 .nav-links a:hover {
-    text-decoration: underline;
+    transition: 0.3s ease-in-out;
+    transition: color 0.4s ease-in-out;
+    background: linear-gradient(to right, rgb(30, 30, 220),rgb(20, 20, 250), blue, rgb(20, 200, 250));   
+    background-clip: text;
+    display: inline;
+    color: transparent;
+    animation: animated 5s linear infinite;
+    transition: ease-in-out;
 }
 
 main {
