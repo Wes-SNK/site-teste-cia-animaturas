@@ -30,7 +30,9 @@ nav {
 }
 
 #titulo {
-    font-size: 1.5em;
+    font-family: 'looney tunes';
+    font-size: 2.1em;
+    font-weight: lighter;
     color: #e9d9d9;
     margin-bottom: 0;
 }
@@ -42,6 +44,8 @@ nav {
 }
 
 .nav-links {
+    font-family: 'comic sans';
+    font-size: 1.08em;
     list-style: none;
     display: flex;
     gap: 20px;
