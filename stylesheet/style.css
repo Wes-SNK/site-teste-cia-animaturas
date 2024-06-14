@@ -76,7 +76,7 @@ main {
 #conteudo {
     display: flex;
     width: 85%;
-    padding: 80px;
+    padding: 20px;
     background-color: rgba(224, 214, 214, 0.05); /* Fundo semitransparente */
     border-radius: 18px;
     gap: 20px;
