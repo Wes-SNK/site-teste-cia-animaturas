@@ -75,7 +75,7 @@ main {
 
 #conteudo {
     display: flex;
-    width: 85%;
+    width: 85vw;
     padding: 20px;
     background-color: rgba(224, 214, 214, 0.05); /* Fundo semitransparente */
     border-radius: 18px;
@@ -83,7 +83,7 @@ main {
 }
 
 #quem-somos {
-    width: 60%;
+    width: 60vw;
 }
 
 h1 {
