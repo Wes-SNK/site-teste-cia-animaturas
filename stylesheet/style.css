@@ -278,6 +278,7 @@ hr {
     }
 
     #conteudo {
+        width: 80vw;
         flex-direction: column;
         align-items: center;
     }
@@ -315,7 +316,7 @@ hr {
     }
 
     .nav-links a {
-        font-size: 0.8em;
+        font-size: 0.65em;
     }
 
     .logo-container {
@@ -341,6 +342,7 @@ hr {
     }
 
     #conteudo {
+        width: 70vw;
         flex-direction: column;
         align-items: center;
     }
