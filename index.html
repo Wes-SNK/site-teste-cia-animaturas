@@ -21,16 +21,23 @@
             font-style: normal;
         }        
         @font-face {
-            font-family: 'comic sans';
+            font-family: 'comic-sans';
             src: url('fontes/comic-sans/design.graffiti.comicsansms.ttf') format(truetype);            
         }
         @font-face {
-            font-family: 'looney tunes';
+            font-family: 'looney-tunes';
             src: url(fontes/looney-tunes/Looney\ Tunes\ Tilt\ BT-FONTSMAGAZINE.ttf) format(truetype);
+        }
+        @font-face {
+            font-family: 'birthstone-formal';
+            src: url(fontes/birthstone-formal/Birthstone\ Formal\ Regular.ttf) format(truetype);
         }
     </style>
 </head>
 <body>
+    <div id="boneco_superior">   
+        <img src="img/bonecos/boneco1_transparente_400x200.png" alt="Boneco Cia. Animaturas"> 
+    </div>
     <header>
         <nav>
             <div class="logo">
@@ -87,15 +94,27 @@
         </div>
     </main>
     <footer>
-        <div class="contact-info">
-            <p>Entre em contato: contato@animaturas.com</p>
-            <p>Telefone: (85) 99999-9999</p>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="img/logo/branco.png" alt="Logo da Cia. Animaturas">
+                <p>CNPJ: 48.517.084/0001-61</p>
+            </div>
+            <div class="footer-contact">
+                <h3>Contate-nos</h3>
+                <p>Telefone: (85) 9 98730-4871</p>
+                <p>E-mail: cia.animaturas@gmail.com</p>
+            </div>
+            <div class="footer-social">
+                <a href="https://www.youtube.com/@cia.animaturas" target="_blank"><img src="img/logo-yt.png" alt="YouTube"></a>
+                <a href="https://www.instagram.com/cia.animaturas" target="_blank"><img src="img/logo-ig.png" alt="Instagram"></a>
+            </div>
         </div>
-        <div class="social-links">
-            <a href="https://www.facebook.com" target="_blank">Facebook</a>
-            <a href="https://www.instagram.com" target="_blank">Instagram</a>
-            <a href="https://www.twitter.com" target="_blank">Twitter</a>
+        <hr>
+        <div class="footer-copyright">
+            <p>&copy; 2024 por Wesley</p>
+            <img src="img/wl.png" alt="Logo Pequena" height="40px">
         </div>
+        <button id="back-to-top" title="Voltar ao Topo">&#8679;</button>
     </footer>
     <script src="script/script.js"></script>
 </body>

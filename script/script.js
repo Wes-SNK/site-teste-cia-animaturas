@@ -64,3 +64,19 @@ window.onload = () => {
     }, 3000); // Ajuste o tempo conforme a duração do seu GIF
 };
 // FIM
+
+// Função para mostrar ou esconder o botão de "Voltar ao Topo"
+window.onscroll = function() {
+    const backToTopButton = document.getElementById("back-to-top");
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        backToTopButton.style.display = "block";
+    } else {
+        backToTopButton.style.display = "none";
+    }
+};
+
+// Função para rolar a página de volta ao topo
+document.getElementById('back-to-top').addEventListener('click', function() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+});
