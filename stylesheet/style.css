@@ -267,7 +267,7 @@ hr {
     }
 
     .nav-links {
-        display: flex;
+        display: column;
         flex-direction: column;
         align-items: center;
     }
