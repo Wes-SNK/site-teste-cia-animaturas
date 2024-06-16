@@ -10,6 +10,18 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
+document.addEventListener('DOMContentLoaded', () => {
+    const bonecoInferior = document.getElementById('boneco-inferior');
+    if (bonecoInferior) {
+        bonecoInferior.addEventListener('click', () => {
+            bonecoInferior.classList.add('dancing');
+            setTimeout(() => {
+                bonecoInferior.classList.remove('dancing');
+            }, 500);
+        });
+    }
+});
+
 // Função para definir favicon baseado no modo (light/dark)
 function setFavicon(mode) {
     const faviconLinks = document.querySelectorAll('link[rel="icon"]');
