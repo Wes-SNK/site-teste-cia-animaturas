@@ -17,7 +17,7 @@ header {
     background-color: #000000;
     padding: 14px 20px;
     position: relative;
-    box-shadow: 4px 4px 10px rgba(12, 12, 12, 0.6); /* Adiciona uma sombra suave na borda inferior */
+    box-shadow: 4px 4px 16px rgba(107, 101, 101, 0.6); /* Adiciona uma sombra suave na borda inferior */
 }
 
 nav {
