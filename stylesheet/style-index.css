@@ -290,14 +290,14 @@ footer {
 
 .footer-social img {
     width: 28px;
-    height: 70px;
-    border-radius: 160px;
+    height: 60px;
 }
 
 .footer-social img:hover {
-    background: linear-gradient(to left, red, pink, violet);
-    animation: animated 2.1s linear;
-    transition: all 0.6 ease;
+    /* background: linear-gradient(to left, red, pink, violet);
+    animation: animated 2.1s linear; */
+    transform: scale(1.1);
+    transition: 0.6 ease-in-out;
 }
 
 .footer-contact, .footer-social {
@@ -314,7 +314,7 @@ hr {
     align-items: center;
     justify-content: left;
     font-family: 'birthstone-formal';
-    font-size: 1.18em;
+    font-size: 0.85em;
     font-weight: lighter;
     padding: 0 10px;
 }
