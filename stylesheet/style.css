@@ -137,6 +137,7 @@ p {
     margin-bottom: 15px;
 }
 
+/* página quem-somos início */
 h2 {
     text-align: center;
     padding: 20px 0 50px 0;
@@ -178,6 +179,7 @@ p.integrante {
     display: none;
     /* ... outros estilos para o modal */
 }
+/* página quem-somos fim */
 
 #imagensSobrepostas {
     display: column;
