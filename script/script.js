@@ -92,3 +92,35 @@ document.getElementById('back-to-top').addEventListener('click', function() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 });
+
+// modais para efeito das fotos na página quem-somos
+// Seleciona todas as fotos de perfil e os modais
+const profilePhotos = document.querySelectorAll('.integrante');
+const modals = document.querySelectorAll('.modal');
+const closeButtons = document.querySelectorAll('.close');
+
+// Ao clicar na foto de perfil, abre o modal correspondente
+profilePhotos.forEach(photo => {
+  photo.addEventListener('click', function() {
+    const memberId = this.getAttribute('data-member');
+    document.getElementById('modal-lena').style.display = 'block';
+  });
+});
+
+// Ao clicar no "x", fecha o modal
+closeButtons.forEach(button => {
+  button.addEventListener('click', function() {
+    const memberId = this.getAttribute('data-member');
+    document.getElementById('modal-lena').style.display = 'none';
+  });
+});
+
+// Fecha o modal ao clicar fora da área de conteúdo
+window.addEventListener('click', function(event) {
+  modals.forEach(modal => {
+    if (event.target == modal) {
+      modal.style.display = 'none';
+    }
+  });
+});
+
