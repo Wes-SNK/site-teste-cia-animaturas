@@ -92,35 +92,45 @@ document.getElementById('back-to-top').addEventListener('click', function() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 });
+// fim da função
 
-// modais para efeito das fotos na página quem-somos
-// Seleciona todas as fotos de perfil e os modais
-const profilePhotos = document.querySelectorAll('.integrante');
-const modals = document.querySelectorAll('.modal');
-const closeButtons = document.querySelectorAll('.close');
+// Função para exibir o modal
+const modal = document.getElementById("modal");
+const modalContent = document.getElementById("member-bio");
+const closeBtn = document.querySelector(".close");
 
-// Ao clicar na foto de perfil, abre o modal correspondente
-profilePhotos.forEach(photo => {
-  photo.addEventListener('click', function() {
-    const memberId = this.getAttribute('data-member');
-    document.getElementById('modal-lena').style.display = 'block';
+document.querySelectorAll(".integrante").forEach((item) => {
+  item.addEventListener("click", function () {
+    const member = this.dataset.member;
+    // Texto da minibio (exemplo; substitua conforme necessário)
+    const bios = {
+      lena: `Co-fundadora da Cia. Animaturas, Atriz, Arte-educadora, Produtora, Bonequeira, Pesquisadora de linguagens e técnicas teatrais, e Graduanda em Teatro-
+Licenciatura pela UFC. Seu currículo inclui a apresentação de “Avoa Acauã, Avia Maria!” no projeto Palco de Giz da UFC e no XIV Festival de Teatro de Fortaleza, além
+de “A Casa de Bernarda Alba” no XXIV Festival do Estudante. Dentro da Cia. Animaturas, utiliza as formas animadas como meio de transformação social.
+Desenvolveu os projetos "Poéticas de Si" no Edital de Iniciativas do Desenvolvimento Comunitário do Centro Cultural Bom Jardim em 2022, com ações na Associação
+Queira O Bem, e "Autoidentidade", fomentado pelo II Edital Cultura Infância, realizado em escolas públicas e instituições não governamentais da periferia de
+Fortaleza. Concluiu recentemente o Programa de Residência Pedagógica da CAPES, na área de Teatro.`,
+      integrante2: "Mini biografia do integrante 2...",
+      integrante3: "Mini biografia do integrante 3..."
+    };
+    modalContent.textContent = bios[member] || "Biografia não encontrada";
+    modal.style.display = "flex";
   });
 });
 
-// Ao clicar no "x", fecha o modal
-closeButtons.forEach(button => {
-  button.addEventListener('click', function() {
-    const memberId = this.getAttribute('data-member');
-    document.getElementById('modal-lena').style.display = 'none';
-  });
+// Função para fechar o modal
+closeBtn.addEventListener("click", () => {
+  modal.style.display = "none";
 });
 
-// Fecha o modal ao clicar fora da área de conteúdo
-window.addEventListener('click', function(event) {
-  modals.forEach(modal => {
-    if (event.target == modal) {
-      modal.style.display = 'none';
-    }
-  });
+window.addEventListener("click", (event) => {
+  if (event.target === modal) {
+    modal.style.display = "none";
+  }
 });
+
+
+
+
+
 
