@@ -140,81 +140,70 @@ p {
 /* página quem-somos início */
 h2 {
     text-align: center;
-    padding: 20px 0 50px 0;
+    padding: 20px 0 10px 0;
 }
 
 h4 {
-    font-size: medium;
+    font-size: larger;
     text-wrap: balance;
+    padding: 08px 16px 6px 4px;
 }
 
-p.integrante {
-    font-size: small;
+p {
+    font-size: medium;
     font-weight: lighter;
+    padding: 10px 10px;
+    align-self: baseline;
 }
 
-/* Estilos para a grid, membros, modal e outros elementos */
-.grid {
-    display: grid;    
-    grid-template-columns: repeat(2, 450px);
-    align-items: center;
-    justify-content: center;
-    grid-auto-flow: dense;
-    padding: 10px 0 10px 0;
-    gap: 20px;
-}
 
-/* Modal (minibio) */
-.modal {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background: rgba(0, 0, 0, 0.7);
-    justify-content: center;
-    align-items: center;
-}
-  
-.modal-content {
-    background: rgba(255, 255, 255, 0.9);
-    padding: 20px;
-    border-radius: 8px;
-    max-width: 500px;
-    text-align: center;
-}
-  
-.close {
+.integrantes {
     position: absolute;
-    top: 10px;
-    right: 20px;
-    font-size: 24px;
-    cursor: pointer;
-    color: #333;
-}
-
-.grid > .integrante:nth-last-child(1):nth-child(odd) {
-    grid-column: span 2; /* Faz o último item ocupar as duas colunas */
-    justify-self: center; /* Centraliza o item */
+    display: flex;
 }
 
 .integrante {
-    align-items: center;
-    justify-self: center;
-    text-align: center;
-    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-content: center;
+    width: 85vw;
+    margin: 2% 0;
+    background-color: rgba(224, 214, 214, 0.05);
+    border: 1px solid rgb(49, 46, 46);
+    border-radius: 28px;
+    box-shadow: -2px -2px 2px 2px rgba(63, 61, 61, 0.6);
 }
   
 .integrante img {
-    width: 50%;
-    border-radius: 50%;
+    width: auto;
+    height: 20%;
+    margin: 8px;
+    border-radius: 10%;
 }
-  
-.integrante img:hover {
-    transform: scale(1.6);
-    transition: ease-in-out 0.4s;
-    opacity: 75%;
+
+#bio {
+    display: flex;
+    position: absolute;
+    justify-content: left;
+    padding: 2px 30px 0 4px;
+    margin: 70px 0  0 300px;
+}
+
+.integrante a {
+    text-decoration: none;
+    color: #e9d9d9;
+}
+
+.integrante a:visited {
+    color: #555;
+}
+
+.integrante a:hover {
+    color: rgb(61, 61, 236);
+}
+
+.integrante a:active {
+    color: rgb(192, 43, 155);
 }
 
 #imagensSobrepostas {
@@ -384,9 +373,27 @@ footer {
     text-align: left;
 }
 
+.footer-contact a {
+    text-decoration: none;
+    color: #fdfcfc;
+}
+
+.footer-contact a:visited {
+    color: #555;
+}
+
+.footer-contact a:hover {
+    color: rgb(12, 12, 70);
+}
+
+.footer-contact a:active {
+    color: rgb(192, 43, 155);
+}
+
+
 hr {
     border: 1px solid #555;
-    margin: 20px 0;
+    margin: 10px 0 0 0;
 }
 
 .footer-copyright {
