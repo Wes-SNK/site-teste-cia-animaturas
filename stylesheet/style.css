@@ -17,7 +17,8 @@ header {
     background-color: #000000;
     padding: 14px 20px;
     position: relative;
-    box-shadow: 4px 4px 16px rgba(107, 101, 101, 0.6); /* Adiciona uma sombra suave na borda inferior */
+    box-shadow: 4px 4px 16px rgba(107, 101, 101, 0.6);/* Adiciona uma sombra suave na borda inferior */
+    width: 100%;
 }
 
 nav {
@@ -209,6 +210,81 @@ p {
 .integrante a:active {
     color: rgb(192, 43, 155);
 }
+/* páginas quem somos fim */
+
+/* página projetos início */
+
+#container-projetos {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* página projetos início */
+
+/* página projetos início */
+
+#container-projetos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 40px; /* Espaçamento entre os projetos */
+}
+
+#container-projetos > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 900px;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+}
+
+/* Estilização do título e do parágrafo */
+.projeto-acaua, .projeto-dedoches, .projeto-autoidentidade, .projeto-poeticas {
+    align-self: center;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.p-acaua, .p-dedoches, .p-autoidentidade, .p-poeticas {
+    text-align: justify;
+    padding: 10px;
+}
+
+/* Layout das imagens lado a lado */
+.imagens-projeto {
+    display: flex;
+    gap: 20px; /* Espaçamento entre as fotos */
+    justify-content: center;
+    width: 100%;
+}
+
+/* Estilização das imagens */
+.imagens-projeto img {
+    width: 100%;
+    max-width: 400px; /* Limite máximo para cada imagem */
+    height: auto;
+    border-radius: 20px;
+    display: block;
+}
+
+/* Link "Veja mais fotos" */
+.link-acaua, .link-dedoches, .link-autoidentidade, .link-poeticas {
+    align-self: flex-end;
+    margin-top: 10px;
+    color: #0066cc;
+    text-decoration: none;
+}
+
+/* página projetos fim */
 
 #imagensSobrepostas {
     display: column;
@@ -318,6 +394,7 @@ footer {
     color: #e9d9d9;
     padding: 20px;
     text-align: center;
+    width: 100vw;
 }
 
 .footer-container {
@@ -394,7 +471,6 @@ footer {
     color: rgb(192, 43, 155);
 }
 
-
 hr {
     border: 1px solid #555;
     margin: 10px 0 0 0;
@@ -447,24 +523,20 @@ hr {
 }
 
 /* Media Queries */
-@media screen and (max-width: 250px) {
+@media screen and (max-width: 320px) {
     body {
         width: 100vw;
     }
 
     #boneco_superior {
-        width: 0;
-        height: 132px;
-        margin: -44px 0 0 -15px;
-        position: absolute;
-        left: 180px;
-        top: 285px;
+        display: none;
     }
 
     header {
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: 110vw;
     }
 
     nav {
@@ -475,16 +547,13 @@ hr {
 
     .logo {
         display: flex;
-        flex-direction: column;
-        align-items: flex-end;
+        flex-direction: row;
     }
 
     #logoGif {
         width: 30px; /* Reduz o tamanho do logo para caber na tela pequena */
         margin: 0;
         position: relative;
-        top: 35px;
-        margin-top: -40px;
     }
 
     #titulo {
@@ -536,6 +605,188 @@ hr {
         left: 25px;
     }
 
+    main {
+        width: 100vw;
+    }
+
+    #integrantes {
+        width: 100vw;
+    }
+    #integrantes h2 {
+        font-size: 14px;
+    }
+
+    .integrante {
+        width: 100vw;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+    .integrante img {
+        width: 222px;
+        height: auto;
+        align-self: center;
+    }
+    .integrante h4, p {
+        align-self: center;
+    }
+    #bio {
+        display: none;
+    }
+    footer {
+        position: relative;
+        padding: 0;
+        width: 110vw;
+    }
+
+    .footer-container {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .footer-logo,
+    .footer-contact,
+    .footer-social {
+        text-align: center;
+    }
+
+    .footer-social a img {
+        display: inline-flex;
+        width: 50px;
+        height: 40px;
+    }
+
+    .footer-contact p {
+        padding: 2px 0 0 10px;
+    }
+
+    #boneco-inferior {
+        display: none;
+    }
+
+    #back-to-top {
+        display: none;
+        position: fixed;
+        bottom: 3px;
+        right: 45px;
+    }
+}
+
+@media screen and (min-width: 321px) and (max-width: 480px) {
+    body {
+        width: 100vw;
+    }
+
+    #boneco_superior {
+       display: none;
+    }   
+
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .logo h3 {
+        font-size: 1.6em;
+    }
+    #logoGif {
+        width: 30px; /* Reduz o tamanho do logo para caber na tela pequena */
+        margin: 0;
+        position: relative;
+    }
+
+    #titulo {
+        font-size: 1.5em; /* Ajuste o tamanho da fonte */
+        margin: 5px 0;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: row;
+        gap: 25px; /* Menor espaçamento entre os links */
+        margin-right: 0;
+    }
+
+    .nav-links li {
+        display: block;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        align-items: center;
+        max-width: 100vw;
+    }
+
+    #conteudo {
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        width: auto;
+    }
+
+    #quem-somos {
+        width: 100vw;
+    }
+
+    #quem-somos h1 {
+        font-size: 1.6em;
+        text-align: center;
+    }
+
+    #imagensSobrepostas {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 80%;
+        align-items: center;
+        justify-items: center;
+        position: relative;
+        left: 25px;
+    }
+
+    main {
+        width: 100vw;
+    }
+
+    #integrantes {
+        width: 100vw;
+    }
+    #integrantes h2 {
+        font-size: 1.4em;
+    }
+
+    .integrante {
+        width: 100vw;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+    .integrante img {
+        width: 222px;
+        height: auto;
+        align-self: center;
+    }
+    .integrante h4, p {
+        align-self: center;
+    }
+    #bio {
+        display: none;
+    }
     footer {
         position: relative;
         padding: 0;
@@ -576,306 +827,164 @@ hr {
     }
 }
 
-@media screen and (max-width: 250px) and (orientation: landscape) {
+@media screen and (min-width: 481px) and (max-width: 768px) {
     body {
-        width: 100vw;
+        box-sizing: border-box;
     }
 
     #boneco_superior {
-        width: 0;
-        height: 100px;
-        position: absolute;
-        left: 220px;
-        top: 150px;
-    }
+       display: none;
+    }   
 
     header {
         display: flex;
-        flex-direction: row;
-        justify-content: center;
+        flex-direction: column;
         align-items: center;
-        padding: 0;
     }
 
     nav {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
-        gap: 5px;
     }
 
     .logo {
         display: flex;
         flex-direction: row;
-        align-items: center;
     }
 
+    .logo h3 {
+        font-size: 1.6em;
+    }
     #logoGif {
-        width: 30px; /* Ajuste para o tamanho do logo */
-        margin-right: 8px;
-        margin-top: 0;
+        width: 30px; /* Reduz o tamanho do logo para caber na tela pequena */
+        margin: 0;
+        position: relative;
     }
 
     #titulo {
-        font-size: 1.2em; /* Menor para ajustar a tela landscape */
-        margin: 0;
+        font-size: 1.5em; /* Ajuste o tamanho da fonte */
+        margin: 5px 0;
     }
 
     .nav-links {
         display: flex;
         flex-direction: row;
-        gap: 8px;
+        gap: 25px; /* Menor espaçamento entre os links */
+        margin-right: 0;
     }
 
     .nav-links li {
         display: block;
-        font-size: 0.8em;
-    }
-
-    main {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: flex-start;
-        max-width: 100vw;
-        padding: 10px;
     }
 
     #conteudo {
+        padding: 0;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         width: auto;
     }
 
     #quem-somos {
-        width: 90vw;
+        width: 100vw;
     }
 
     #quem-somos h1 {
-        font-size: 1.4em;
+        font-size: 1.6em;
+        text-align: center;
     }
 
     #imagensSobrepostas {
         display: flex;
         flex-wrap: wrap;
-        flex-direction: row;
-        width: 90%;
+        flex-direction: column;
+        width: 80%;
         align-items: center;
-        justify-content: center;
+        justify-items: center;
+        position: relative;
+        left: 85px;
+    }
+
+    #integrantes h2 {
+        font-size: 1.4em;
+    }
+
+    .integrante {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .integrante img {
+        width: 222px;
+        height: auto;
+        align-self: start;
+    }
+    .integrante h4, p {
+        display: flex;
+        flex-direction: row;
+    }
+    p.tiago {
+        font-size: 16.5px;
+    }
+    #bio {
+        font-size: .8em;
+        box-sizing: border-box;
+        overflow-wrap: break-word;
+        width: 100%;
+        padding: 0 270px 0 0;
+        left: -7%;
     }
 
     footer {
         position: relative;
-        padding: 5px;
-        width: 100vw;
+        padding: 0;
+        width: 110vw;
     }
 
     .footer-container {
         display: flex;
-        flex-direction: row;
-        justify-content: space-around;
+        flex-direction: row-reverse;
+        justify-content: space-evenly;        
+        padding: 0;
     }
 
     .footer-logo,
     .footer-contact,
     .footer-social {
-        text-align: center;
-        font-size: 0.7em;
+        text-align: justify;
     }
 
+    .footer-logo p {
+        position: relative;
+        left: -14%;
+    }
     .footer-social a img {
-        width: 40px;
-        height: 30px;
+        display: inline-flex;
+        width: 50px;
+        height: 40px;
     }
-
+    .footer-social h3 {
+        position: relative;
+        left: -14%;
+    }
     .footer-contact p {
-        padding: 0 10px;
+        padding: 0;
     }
-
+    .footer-contact h3 {
+        position: relative;
+        margin: 0;
+        left: 22%;
+    }
     #boneco-inferior {
         display: none;
     }
 
     #back-to-top {
-        display: none;
+        display: flex;
+        position: fixed;
+        bottom: 0;
+        right: 22%;
+        width: 10px;
+        height: auto;
     }
 }
-
-/* 320px — 480px: Dispositivos Móveis */
-@media screen and (max-width: 480px) {
-    body {
-        font-size: 14px;
-        padding: 0;
-    }
-
-    header {
-        flex-direction: column;
-        padding: 10px;
-    }
-
-    .logo img {
-        width: 40px;
-    }
-
-    #titulo {
-        font-size: 1.4em;
-    }
-
-    .nav-links {
-        flex-direction: column;
-        gap: 8px;
-        font-size: 1em;
-    }
-
-    footer {
-        flex-direction: column;
-        font-size: 0.8em;
-    }
-}
-
-/* 320px — 480px Landscape */
-@media screen and (max-width: 480px) and (orientation: landscape) {
-    header, nav {
-        flex-direction: row;
-    }
-
-    .nav-links {
-        flex-direction: row;
-        gap: 15px;
-        font-size: 1em;
-    }
-
-    #logoGif {
-        width: 30px;
-    }
-
-    #titulo {
-        font-size: 1.3em;
-    }
-}
-
-/* 481px — 768px: iPads, Tablets */
-@media screen and (min-width: 481px) and (max-width: 768px) {
-    body {
-        font-size: 16px;
-    }
-
-    header {
-        padding: 15px;
-    }
-
-    #titulo {
-        font-size: 1.6em;
-    }
-
-    .nav-links {
-        gap: 10px;
-        font-size: 1.2em;
-    }
-
-    footer {
-        font-size: 0.9em;
-    }
-}
-
-/* 481px — 768px Landscape */
-@media screen and (min-width: 481px) and (max-width: 768px) and (orientation: landscape) {
-    header, nav {
-        flex-direction: row;
-    }
-
-    .logo img {
-        width: 50px;
-    }
-
-    #titulo {
-        font-size: 1.4em;
-    }
-
-    .nav-links {
-        gap: 20px;
-        font-size: 1.1em;
-    }
-}
-
-/* 769px — 1024px: Telas Pequenas, Laptops */
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-    body {
-        font-size: 17px;
-    }
-
-    header {
-        padding: 20px;
-        flex-direction: row;
-    }
-
-    #titulo {
-        font-size: 1.8em;
-    }
-
-    .nav-links {
-        gap: 30px;
-        font-size: 1.3em;
-    }
-
-    footer {
-        font-size: 1em;
-    }
-}
-
-/* 1025px — 1200px: Desktops, Telas Grandes */
-@media screen and (min-width: 1025px) and (max-width: 1200px) {
-    body {
-        font-size: 18px;
-    }
-
-    header {
-        padding: 25px;
-    }
-
-    .logo img {
-        width: 60px;
-    }
-
-    #titulo {
-        font-size: 2em;
-    }
-
-    .nav-links {
-        gap: 40px;
-        font-size: 1.4em;
-    }
-
-    footer {
-        font-size: 1.1em;
-    }
-}
-
-/* 1201px e acima: Telas Muito Grandes, TVs */
-@media screen and (min-width: 1201px) {
-    body {
-        font-size: 20px;
-    }
-
-    header {
-        padding: 30px;
-    }
-
-    .logo img {
-        width: 80px;
-    }
-
-    #titulo {
-        font-size: 2.2em;
-    }
-
-    .nav-links {
-        gap: 50px;
-        font-size: 1.6em;
-    }
-
-    footer {
-        font-size: 1.2em;
-    }
-}
-
