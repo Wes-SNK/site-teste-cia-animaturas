@@ -216,20 +216,6 @@ p {
 
 #container-projetos {
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    padding: 20px;
-}
-
-/* página projetos início */
-
-/* página projetos início */
-
-#container-projetos {
-    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -243,18 +229,25 @@ p {
     align-items: center;
     max-width: 900px;
     padding: 20px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.6);
     border-radius: 15px;
+    transition: transform 0.2s; /* Efeito de transição ao passar o mouse */
 }
 
 /* Estilização do título e do parágrafo */
-.projeto-acaua, .projeto-dedoches, .projeto-autoidentidade, .projeto-poeticas {
+.projeto-acaua, 
+.projeto-dedoches, 
+.projeto-autoidentidade, 
+.projeto-poeticas {
     align-self: center;
     text-align: center;
     margin-top: 10px;
 }
 
-.p-acaua, .p-dedoches, .p-autoidentidade, .p-poeticas {
+.p-acaua, 
+.p-dedoches, 
+.p-autoidentidade, 
+.p-poeticas {
     text-align: justify;
     padding: 10px;
 }
@@ -274,16 +267,27 @@ p {
     height: auto;
     border-radius: 20px;
     display: block;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
 }
 
 /* Link "Veja mais fotos" */
-.link-acaua, .link-dedoches, .link-autoidentidade, .link-poeticas {
+.link-acaua, 
+.link-dedoches, 
+.link-autoidentidade, 
+.link-poeticas {
     align-self: flex-end;
     margin-top: 10px;
     color: #0066cc;
     text-decoration: none;
 }
 
+.link-acaua:hover, 
+.link-dedoches:hover, 
+.link-autoidentidade:hover, 
+.link-poeticas:hover {
+    text-decoration: underline; /* Sublinhado ao passar o mouse */
+    color: #0056b3; /* Cor do link ao passar o mouse */
+}
 /* página projetos fim */
 
 #imagensSobrepostas {
@@ -633,6 +637,15 @@ hr {
     #bio {
         display: none;
     }
+
+    #container-projetos {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #container-projetos div {
+        display: grid;
+    }
     footer {
         position: relative;
         padding: 0;
@@ -787,6 +800,33 @@ hr {
     #bio {
         display: none;
     }
+
+    #container-projetos {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #container-projetos div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imagens-projeto {
+        display: flex;
+        flex-direction: column;
+        max-width: 320px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .foto-acaua1,
+    .foto-acaua2 {
+        position: relative;
+        justify-self: center;
+        align-self: center;
+    }
+
     footer {
         position: relative;
         padding: 0;
@@ -934,6 +974,13 @@ hr {
         padding: 0 270px 0 0;
         left: -7%;
     }
+    
+    /* Estilização das imagens */
+    .imagens-projeto img {
+        width: 100%;
+        max-width: 300px; /* Limite máximo para cada imagem */
+        height: auto;
+    } 
 
     footer {
         position: relative;
