@@ -1,58 +1,42 @@
-Site da Cia. Animaturas
+# Site da Cia. Animaturas
 
-Bem-vindo ao repositório do site da Cia. Animaturas! Este projeto foi desenvolvido utilizando apenas HTML, CSS e JavaScript, oferecendo uma experiência simples e responsiva.
+Este repositório contém o código-fonte do site da **Cia. Animaturas**, desenvolvido exclusivamente com **HTML**, **CSS** e **JavaScript**.
 
-Sobre a Cia. Animaturas
+## Sobre a Cia. Animaturas
 
-A Cia. Animaturas é um grupo de Teatro comprometido com a Formação, Educação e Apresentação de espetáculos para públicos de todas as idades, utilizando técnicas de Formas Animadas. A companhia tem como missão inspirar e encantar por meio da arte e da ludicidade, promovendo experiências criativas e educativas.
+A **Cia. Animaturas** é um grupo de teatro dedicado à **Formação, Educação** e **Apresentação de espetáculos** voltados tanto para **crianças** quanto para **adultos**, com foco no uso das **Formas Animadas**. A companhia explora a ludicidade e a interação com o público através de apresentações únicas e educativas.
 
-Objetivo do Projeto
+## Descrição do Projeto
 
-O site foi projetado para refletir a identidade visual e a essência lúdica do grupo, trazendo elementos visuais que remetem às Formas Animadas e mantendo um design que transmita a energia e a proposta artística da companhia. A ideia foi criar um ambiente que harmonize o visual vibrante e acessível com uma navegação simples.
+O site foi projetado para refletir a identidade visual da companhia, enfatizando a **ludicidade das formas animadas** e os elementos estéticos que caracterizam o grupo. Ele inclui informações sobre os espetáculos, atividades, fotos e detalhes sobre a equipe e as ações realizadas.
 
-Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
-HTML: Estrutura de todo o site.
+- **HTML**
+- **CSS**
+- **JavaScript**
 
-CSS: Estilização e responsividade para uma experiência fluida em diferentes dispositivos.
+## Funcionalidades
 
-JavaScript: Interatividade e funcionalidades dinâmicas para melhorar a experiência do usuário.
+- Exibição de informações sobre os espetáculos.
+- Galeria de fotos dos projetos.
+- Descrição dos integrantes da companhia.
+- Links para contato e mais detalhes sobre as apresentações.
 
-Estrutura do Projeto
+## Estrutura do Projeto
 
-O projeto é organizado em diferentes seções que destacam:
+A estrutura do projeto segue uma organização simples, com as pastas divididas em:
 
-Quem Somos: Uma visão geral da história, missão e valores da Cia. Animaturas.
+- **/css**: Contém os arquivos de estilo.
+- **/js**: Inclui scripts de funcionalidades.
+- **/img**: Armazena as imagens utilizadas no site.
+- **/index.html**: Página principal do site.
 
-Projetos: Página dedicada aos projetos e espetáculos desenvolvidos, cada um com uma breve descrição e galeria de fotos.
+## Como Contribuir
 
-Contato: Seção para que os visitantes possam entrar em contato com a companhia.
+Se você deseja contribuir com este projeto, sinta-se à vontade para fazer um fork do repositório, criar uma branch com suas modificações e enviar um pull request.
 
-Recursos de Design
+## Licença
 
-O design do site foi inspirado na ludicidade das Formas Animadas, com cores vibrantes e elementos gráficos que remetem à criatividade e ao universo infantil, sem perder a sofisticação que atrai também o público adulto.
-
-Como Executar Localmente
-
-Para rodar o projeto em seu ambiente local:
-
-Clone este repositório:
-
-git clone https://github.com/seu-usuario/cia-animaturas.git
-
-Navegue até o diretório do projeto:
-
-cd cia-animaturas
-
-Abra o arquivo index.html no navegador de sua preferência.
-
-Contribuição
-
-Se você deseja contribuir com melhorias, sinta-se à vontade para fazer um fork deste repositório e enviar suas sugestões por meio de pull requests.
-
-Licença
-
-Este projeto é licenciado sob a Licença MIT.
-
-Agradecemos por visitar o repositório e apoiar a Cia. Animaturas. Esperamos que o site possa transmitir um pouco da magia que levamos aos palcos!
+Este projeto é distribuído sob a licença [inserir tipo de licença, se aplicável].
 
