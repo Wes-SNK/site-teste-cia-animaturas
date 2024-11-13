@@ -63,7 +63,7 @@ Se você deseja contribuir com este projeto, sinta-se à vontade para fazer um *
 
 ## Licença
 
-Este projeto é distribuído sob a licença [inserir tipo de licença, se aplicável].
+Este projeto é distribuído sob a licença [LICENSE](./LICENSE).
 
 ---
 
